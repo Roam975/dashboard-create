@@ -1,0 +1,54 @@
+1. As Melhores Métricas para Foco em Leads
+Qualidade do Tráfego (O Filtro de Ouro)
+Antes de analisar qualquer coisa, você precisa limpar o lixo. Leads não vêm de bots.
+
+Métrica: Tráfego Humano vs. Tráfego de Bots (usando o botManagement/score).
+
+Ação: Filtrar todo o resto do dashboard para mostrar apenas dados de usuários com score alto (ex: > 30). Isso garante que sua taxa de conversão não seja distorcida por bots varrendo seu site.
+
+Radar B2B (Prospecção Passiva)
+Se o seu negócio no create-brazil atende outras empresas (B2B) ou tickets altos, essa é a métrica mais valiosa.
+
+Métrica: Top Organizações Visitantes (usando o asOrganization).
+
+Ação: Excluir provedores comuns de internet (Vivo, Claro, Starlink) e focar em nomes de empresas reais, universidades ou órgãos públicos. Se a "Empresa X" acessou seu site 50 vezes nesta semana, seu time de vendas pode fazer uma prospecção ativa no LinkedIn dessa empresa.
+
+Zonas Quentes e Otimização de Anúncios
+Saber exatamente onde seu público está ajuda a direcionar a verba de tráfego pago (Meta Ads, Google Ads).
+
+Métrica: Densidade de Acesso por Estado/Cidade e Horário Nobre (usando region, city e timezone).
+
+Ação: Se você notar que o interior de São Paulo converte mais leads às 20h, você pode pausar anúncios em horários/locais de baixo rendimento e dobrar a verba onde funciona.
+
+Gargalos de Experiência (Fricção na Conversão)
+Um lead que não consegue carregar a página de formulário é um lead perdido.
+
+Métrica: Tempo de resposta combinado com Dispositivo (usando clientTcpEdgeStart e Device Type).
+
+Ação: Identificar se conexões 3G/4G no mobile estão com latência alta. Se sim, seu site precisa ser mais leve para mobile, ou você perderá essas conversões.
+
+2. A Melhor Forma de Visualizar (Estrutura do Dashboard)
+Um dashboard focado em conversão não pode ser um painel de avião cheio de botões confusos. Ele deve seguir uma hierarquia visual de "Resumo -> Descoberta -> Ação".
+
+Nível 1: Cards de KPI (Visão Geral Rápida no Topo)
+Use blocos simples com números grandes e uma pequena seta de tendência (crescimento/queda em relação à semana anterior).
+
+Card 1: Visitantes Humanos Únicos (O tamanho real da sua base de topo de funil).
+
+Card 2: Taxa de Saúde do Tráfego (% de tráfego que não é bot).
+
+Card 3: Dispositivo Dominante (Ex: "📱 78% Mobile").
+
+Nível 2: Gráficos de Contexto (O Meio da Tela)
+Evite gráficos de pizza complexos. Prefira barras horizontais e mapas.
+
+Mapa de Calor (Geolocalização): Um mapa minimalista do Brasil pontilhado com as coordenadas de latitude/longitude. Ajuda a visualizar instantaneamente de qual região o tráfego é mais denso.
+
+Gráfico de Barras Horizontais (Radar B2B): Uma lista limpa mostrando o Top 10 asOrganization (empresas/provedores) que mais trouxeram tráfego humano.
+
+Gráfico de Linha (Horário Nobre): Volume de visitas cruzado com as horas do dia, usando o timezone do usuário.
+
+Nível 3: A Tabela Acionável (O Fundo da Tela)
+Para quem trabalha com captação, o nível mais baixo do dashboard deve ser uma tabela bruta e pesquisável dos últimos visitantes de alto valor.
+
+Colunas Sugeridas: Data/Hora | Empresa/Provedor (asOrganization) | Cidade/Estado | Dispositivo | Score de Autenticidade (Bot ou Humano).
